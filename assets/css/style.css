@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+* li {
+  list-style: none;
+  cursor: pointer;
+}
+
+* a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* button {
+  cursor: pointer;
+}
+
+* i {
+  cursor: pointer;
+}
+
+* img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 771px) {
+  .container {
+    max-width: 680px;
+  }
+}
+nav {
+  width: 100%;
+  padding: 24px 0;
+  background-color: #f8f8f8;
+  position: fixed;
+}
+nav .container .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .container .nav .left img {
+  width: 100px;
+}
+nav .container .nav i {
+  font-size: 20px;
+  display: none;
+}
+nav .container .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+nav .container .nav ul li a {
+  color: black;
+}
+
+@media screen and (max-width: 991px) {
+  nav .container .nav ul {
+    display: none;
+  }
+  nav .container .nav i {
+    display: flex;
+  }
+}
+.section1 {
+  width: 100%;
+  padding: 300px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f0eeee;
+  background-image: url(https://preview.colorlib.com/theme/drimo/drimo/img/banner/server-banner.jpg);
+}
+.section1 .container .section11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section1 .container .section11 .left {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.section1 .container .section11 .left .span1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.section1 .container .section11 .left .span2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+.section1 .container .section11 .left p {
+  font-size: 17px;
+}
+.section1 .container .section11 .left .grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section1 .container .section11 .left button {
+  background-color: #fc5a1a;
+  padding: 12px 20px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+.section1 .container .section11 .right {
+  width: 30%;
+}
+.section1 .container .section11 .right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

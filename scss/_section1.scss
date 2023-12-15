@@ -1,0 +1,60 @@
+.section1 {
+    width: 100%;
+    padding: 300px 0;
+    background-size: cover;
+    background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: #f0eeee;
+    background-image: url(https://preview.colorlib.com/theme/drimo/drimo/img/banner/server-banner.jpg);
+
+.container{
+    .section11{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 25px;
+            .span1{
+                font-size: 50px;
+                font-weight: 400;
+            }
+            .span2{
+                font-size: 30px;
+                font-weight: 200;
+            }
+            p{
+                font-size: 17px;
+            }
+            .grid{
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(2,1fr);
+            }
+            button{
+                background-color: #fc5a1a;
+                padding: 12px 20px;
+                border: none;
+                color: white;
+                font-weight: 500;
+                font-size: 25px;
+        
+            }
+        }
+        .right{
+            width:30%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+    }
+}
+}
