@@ -3,6 +3,8 @@ nav{
     padding:24px 0;
     background-color: #f8f8f8;
     position: fixed;
+    z-index: 100;
+    transition: all 0.5s ease;
     .container{
         .nav{
             width: 100%;
@@ -16,7 +18,7 @@ nav{
                 }
             }
             i{
-                font-size: 20px;
+                font-size: 30px;
                 display: none;
             }
             ul{
@@ -34,6 +36,28 @@ nav{
     }
 }
 
+.nav-menu{
+    width: 100%;
+    position: fixed;
+    top: -500px;
+    z-index: 99;
+    left: 0;
+    transition: all 1s ease;
+background-color: white;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        a{
+            font-size: 14px;
+            color: black;
+            transition: all 0.2s ease;  
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+}
 @media screen and  (max-width:991px){
 nav{
     .container{

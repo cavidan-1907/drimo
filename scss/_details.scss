@@ -1,0 +1,60 @@
+.section{
+    width: 100%;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: #f0eeee;
+    background-image: url(https://preview.colorlib.com/theme/drimo/drimo/img/banner/server-banner.jpg);
+
+   .container{ 
+    .botom1{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       padding: 200px 0;
+        gap: 20px;
+        .card{
+            display: flex;
+          padding: 20px 18px;
+            align-items: center;
+            justify-content:space-between;
+            width: 100%;
+            gap: 90px;
+            border: 5px solid $blue;
+            .img{
+                width: 60px;
+                display: flex;
+                align-items: center;
+              justify-content: center;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:flex-start;
+                text-align: start;
+                text-align: center;
+                gap: 10px;
+                width: 80%;
+                h3{
+                    font-weight: 300;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+
+        }
+       
+
+    }
+}
+}

@@ -1,3 +1,6 @@
+$blue: #7db9e8;
+$white: #f8f8f8;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
@@ -28,15 +31,13 @@
 *img{
     cursor: pointer;
 }
-@media screen  and (max-width:771px){
-    .container{
-        max-width: 680px;
-    }
-    
-}
+
+
 
 @import '../scss/nav';
 @import '../scss/section1';
 @import '../scss/section2';
 @import '../scss/section3';
+@import '../scss/section4';
 @import '../scss/footer';
+@import '../scss/details';
