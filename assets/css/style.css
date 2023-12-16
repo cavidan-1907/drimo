@@ -72,6 +72,7 @@ nav .container .nav ul li a {
   top: -500px;
   z-index: 99;
   left: 0;
+  padding: 30px 0;
   transition: all 1s ease;
   background-color: white;
 }
@@ -211,6 +212,9 @@ nav .container .nav ul li a {
   justify-content: center;
   gap: 30px;
 }
+.section2 .container .section21 input {
+  outline: none;
+}
 .section2 .container .section21 .top {
   display: flex;
   flex-direction: column;
@@ -248,6 +252,8 @@ nav .container .nav ul li a {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  border: 0.5px solid #222;
+  padding: 20px 10px;
 }
 .section2 .container .section21 .botom .card .edit {
   display: flex;
@@ -294,6 +300,16 @@ nav .container .nav ul li a {
   font-size: 25px;
 }
 
+@media screen and (max-width: 991px) {
+  .section2 .container .section21 .botom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .section2 .container .section21 .botom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .section3 {
   padding: 100px 0;
   background-color: #7db9e8;
@@ -541,4 +557,108 @@ footer .container .footer h3 i, footer .container .footer h3 span {
 }
 .section .container .botom1 .card .text p {
   font-size: 14px;
+}
+
+.favorites {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+.favorites .container .section211 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.favorites .container .section211 input {
+  outline: none;
+}
+.favorites .container .section211 i {
+  color: #7db9e8;
+}
+.favorites .container .section211 .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  width: 60%;
+  color: #222;
+}
+.favorites .container .section211 .top h1 {
+  font-size: 35px;
+  font-weight: 200;
+  position: relative;
+}
+.favorites .container .section211 .top h1::after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  background-color: #222;
+  bottom: -10px;
+  left: calc(50% - 80px);
+  width: 50%;
+}
+.favorites .container .section211 .botomF {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.favorites .container .section211 .botomF .cardF {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0.5px solid #222;
+  padding: 20px 10px;
+}
+.favorites .container .section211 .botomF .cardF .edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #7db9e8;
+}
+.favorites .container .section211 .botomF .cardF .img {
+  width: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favorites .container .section211 .botomF .cardF .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.favorites .container .section211 .botomF .cardF .textF {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+}
+.favorites .container .section211 .botomF .cardF .textF a {
+  color: #222;
+}
+.favorites .container .section211 .botomF .cardF .textF h3 {
+  font-weight: 300;
+}
+.favorites .container .section211 .botomF .cardF .textF p {
+  font-size: 14px;
+}
+.favorites .container .section211 button {
+  background-color: #7db9e8;
+  padding: 6px 12px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */

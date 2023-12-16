@@ -4,10 +4,10 @@ const menu=document.querySelector(".bi-list");
 const navMenu = document.querySelector(".nav-menu");
 
 menu.addEventListener("click", () => {
-    if (navMenu.style.top === "100px") {
+    if (navMenu.style.top === "90px") {
         navMenu.style.top = "-500px";
     } else {
-        navMenu.style.top = "100px";
+        navMenu.style.top = "90px";
     }
 });
 
@@ -35,7 +35,7 @@ const url=`http://localhost:3000/data`;
 let botom=document.querySelector(".botom");
 let searchInput = document.querySelector("#search");
 let filteredArr = [];
-let copyArr = [];
+
 let maxlength = 4;
 let loadBtn=document.querySelector(".load");
 
@@ -60,6 +60,7 @@ filteredArr.slice(0,maxlength).forEach(element=> {
     <div class="edit">
     <i onclick=deleteCard(${element.id}) class="bi bi-trash-fill"></i>
     <i class="bi bi-pen"></i>
+    <i onclick="Favorite(${element.id})" class="bi bi-heart"></i>
     </div>
     </div>
     `
@@ -99,4 +100,38 @@ element.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
 getALLCard();
   })
 
+  //favorit
 
+  function Favorite(id) {
+
+    if (event.target.classList.contains('bi-heart')) {
+      event.target.classList.remove('bi-heart')
+      event.target.classList.add('bi-heart-fill')
+  
+      axios.get(`http://localhost:3000/data/${id}`)
+        .then(res => {
+          console.log(res.data);
+          return res.data
+        })
+        .then(res => {
+          axios.get(`http://localhost:3000/favorites`)
+            .then(response => {
+              let iD = response.data.find(f => f.id === response.id);
+              if (!iD) {
+                axios.post(`http://localhost:3000/favorites`, res)
+                console.log(event.target);
+              }
+              else {
+                axios.delete(`http://localhost:3000/favorites/${iD.id}`)
+              }
+            })
+        })
+    }
+    else {
+      event.preventDefault();
+      event.target.classList.remove('bi-heart-fill')
+      event.target.classList.add('bi-heart')
+      axios.delete(`http://localhost:3000/favoourites/${id}`)
+    }
+  }
+  

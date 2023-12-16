@@ -1,18 +1,20 @@
-.section2{
+.favorites{
     width: 100%;
     padding: 100px 0;
     background-color: $white;
     .container{
-        .section21{
-
+        .section211{
+input{
+    outline: none;
+}
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 30px;
-            input{
-                outline: none;
+            i{
+                color: $blue;
             }
             .top{
                 display: flex;
@@ -39,19 +41,19 @@
                     }
                 }
             }
-            .botom{
+            .botomF{
                 width:100%;
                 display: grid;
                 grid-template-columns: repeat(4,1fr);
                 gap: 20px;
-                .card{
+                .cardF{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     gap: 10px;
                     border: 0.5px solid #222;
-                    padding: 20px  10px;
+                    padding: 20px 10px;
                     .edit{
                         display: flex;
                         align-items: center;
@@ -70,7 +72,7 @@
                             object-fit: cover;
                         }
                     }
-                    .text{
+                    .textF{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -78,7 +80,6 @@
                         text-align: center;
                         gap: 10px;
                         width: 100%;
-                   
                         a{
                             color: #222;
                         }
@@ -106,33 +107,3 @@
         }
     }
 }
-
-
-@media screen and (max-width:991px){
-
-.section2{
-    .container{
-        .section21{
-            .botom{
-                grid-template-columns: repeat(2,1fr);
-            }
-        }
-    }
-}
-
-    
-}
-@media screen and (max-width:576px){
-
-    .section2{
-        .container{
-            .section21{
-                .botom{
-                    grid-template-columns: repeat(1,1fr);
-                }
-            }
-        }
-    }
-    
-        
-    }
