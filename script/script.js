@@ -1,5 +1,6 @@
 const nav = document.querySelector('nav');
 const menu = document.querySelector(".bi-list");
+
 const navMenu = document.querySelector(".nav-menu");
 
 menu.addEventListener("click", () => {
@@ -26,9 +27,6 @@ window.onscroll = () => {
     nav.style.padding = "24px 0";
   }
 }
-
-
-
 
 const url = `http://localhost:3000/data`;
 
@@ -108,23 +106,6 @@ loadBtn.addEventListener("click", () => {
   maxlength = maxlength + 4;
   getALLCard()
 })
-
-
-// loadBtn.addEventListener("click", () => {
-//   if(loadBtn.innerText == "Load More"){
-//   maxlength = maxlength + 4;
-//   botom.innerHTML=" "
-//   getALLCard();
-//   loadBtn.innerText="Less More";
-
-//   }
-
-// else{
-//   maxlength=maxlength-4;
-//   botom.innerHTML = "";
-//   loadBtn.innerText = "Load More";
-//   getALLCard();
-// }})
 //delete
 function deleteCard(id) {
   axios.delete(`http://localhost:3000/data/${id}`);
@@ -236,3 +217,39 @@ function editCard(id) {
     reader2.readAsDataURL(src2)
   });
 }
+//smooth
+
+const about=document.querySelector(".about");
+const service=document.querySelector(".service");
+const news=document.querySelector(".news");
+let section2= document.querySelector(".section2");
+let section3= document.querySelector(".section3");
+let section4= document.querySelector(".section4");
+
+service.addEventListener("click", ()=>{
+  section2.scrollIntoView({behavior : "smooth"})
+})
+
+about.addEventListener("click", ()=>{
+  section3.scrollIntoView({behavior: "smooth"})
+})
+
+news.addEventListener("click", ()=>{
+  section4.scrollIntoView({behavior: "smooth"})
+})
+
+// loadBtn.addEventListener("click", () => {
+//   if(loadBtn.innerText == "Load More"){
+//   maxlength = maxlength + 4;
+//   botom.innerHTML=" "
+//   getALLCard();
+//   loadBtn.innerText="Less More";
+
+//   }
+
+// else{
+//   maxlength=maxlength-4;
+//   botom.innerHTML = "";
+//   loadBtn.innerText = "Load More";
+//   getALLCard();
+// }})
