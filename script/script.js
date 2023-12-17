@@ -1,6 +1,5 @@
 const nav = document.querySelector('nav');
 const menu = document.querySelector(".bi-list");
-
 const navMenu = document.querySelector(".nav-menu");
 
 menu.addEventListener("click", () => {
@@ -27,6 +26,9 @@ window.onscroll = () => {
     nav.style.padding = "24px 0";
   }
 }
+
+
+
 
 const url = `http://localhost:3000/data`;
 
@@ -106,6 +108,23 @@ loadBtn.addEventListener("click", () => {
   maxlength = maxlength + 4;
   getALLCard()
 })
+
+
+// loadBtn.addEventListener("click", () => {
+//   if(loadBtn.innerText == "Load More"){
+//   maxlength = maxlength + 4;
+//   botom.innerHTML=" "
+//   getALLCard();
+//   loadBtn.innerText="Less More";
+
+//   }
+
+// else{
+//   maxlength=maxlength-4;
+//   botom.innerHTML = "";
+//   loadBtn.innerText = "Load More";
+//   getALLCard();
+// }})
 //delete
 function deleteCard(id) {
   axios.delete(`http://localhost:3000/data/${id}`);
