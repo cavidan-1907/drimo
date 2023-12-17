@@ -11,6 +11,14 @@
             align-items: center;
             justify-content: center;
             gap: 30px;
+                   .sort{
+                    background-color:$blue;
+                    padding: 3px 6px;
+                    border: none;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 15px; 
+                }
             input{
                 outline: none;
             }
@@ -24,6 +32,7 @@
                 gap: 30px;
                 width: 60%;
                 color: #222;
+         
                 h1{
                     font-size: 35px;
                     font-weight: 200;

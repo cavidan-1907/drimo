@@ -216,6 +216,14 @@ nav .container .nav ul li a:hover {
   justify-content: center;
   gap: 30px;
 }
+.section2 .container .section21 .sort {
+  background-color: #7db9e8;
+  padding: 3px 6px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
 .section2 .container .section21 input {
   outline: none;
 }
