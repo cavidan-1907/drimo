@@ -109,6 +109,7 @@ loadBtn.addEventListener("click", () => {
 //delete
 function deleteCard(id) {
   axios.delete(`http://localhost:3000/data/${id}`);
+  axios.delete(`http://localhost:3000/favorites/${id}`);
   window.location.reload()
 }
 
